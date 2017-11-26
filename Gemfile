@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
+ruby '2.3.4'
+
 gem 'rails', '4.2.7.1'
-gem 'sqlite3'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -16,11 +17,9 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'devise'
 
-
-
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -28,3 +27,7 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  gem 'pg', '~> 0.18.4'
+  gem 'rails_12factor'
+end
