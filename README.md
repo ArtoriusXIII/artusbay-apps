@@ -1,3 +1,5 @@
+This is the repo of the ArtusBay Portfolo Apps
+
 Git for version control
 
 -check status
