@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   root "pages#welcome"
 
   get '/about' => 'pages#about'
-  get '/contacts' => 'contacts#new'
+  get '/contacts' =>  'contacts#new'
     resources :contacts, only: [:new, :create]
+  
   get '/projects' => 'pages#projects'
     resources :projects
 
