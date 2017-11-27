@@ -1,13 +1,19 @@
 Rails.application.routes.draw do
-  #get 'pages/welcome'
-  root "pages#welcome"
-  #get 'pages/about'
-  get '/about' => 'pages#about'
-  #get 'pages/contact'
-  get '/contact' => 'pages#contact'
-  #get 'pages/projects'
-  get '/projects' => 'pages#projects'
-  #get 'pages/posts'
-  get '/posts' => 'pages#posts'
 
+  root "pages#welcome"
+
+  get '/about' => 'pages#about'
+  get '/contacts' => 'contacts#new'
+    resources :contacts, only: [:new, :create]
+  get '/projects' => 'pages#projects'
+    resources :projects
+
+  get '/posts' => 'pages#posts'
+    resources :posts
+
+  #get 'pages/welcome'
+  #get 'pages/about'
+  #get 'pages/contact'
+  #get 'pages/projects'
+  #get 'pages/posts'
 end
