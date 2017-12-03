@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   get '/contacts' =>  'contacts#new'
     resources :contacts, only: [:new, :create]
   
-  get '/projects' => 'pages#projects'
-  
+  get '/projects' => 'projects#index'
+    resources :projects
 
   get '/posts' => 'pages#posts'
     resources :posts
