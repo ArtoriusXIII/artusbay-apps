@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :contacts, only: [:new, :create]
   
   get '/projects' => 'pages#projects'
-    resources :projects
+  
 
   get '/posts' => 'pages#posts'
     resources :posts
