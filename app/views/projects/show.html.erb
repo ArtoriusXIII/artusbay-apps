@@ -7,12 +7,14 @@
         <hr>
         <div class="button_wrapper">
             <a href="<%= @project.link %>" class="project_button" target="_blank" >Visit <%= @project.title %></a>
-        </div
+        </div>
+        <div class="button_wrapper">
+            <%= link_to 'Back', projects_path, class: "project_button" %>
+        </div>
         
         <hr>
         <br>
-       
             <%= link_to 'Edit project', edit_project_path(@project), class: "btn btn-primary" %>
             <%= link_to 'Delete', project_path(@project), method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-danger" %>
-    
+           
 </div>

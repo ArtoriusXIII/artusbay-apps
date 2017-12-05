@@ -17,6 +17,7 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'devise'
 
+
 group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
