@@ -16,7 +16,7 @@ gem 'font-awesome-sass'
 gem 'mail_form'
 gem 'simple_form'
 gem 'devise'
-
+gem 'friendly_id', '~> 5.1.0'
 
 group :development, :test do
   gem 'byebug'
