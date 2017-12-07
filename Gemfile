@@ -17,6 +17,12 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'devise'
 gem 'friendly_id', '~> 5.1.0'
+#Gems for image management
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
+gem 'unf'
+
 
 group :development, :test do
   gem 'byebug'

@@ -31,6 +31,8 @@ class ProjectsController < ApplicationController
   end
   
   def destroy
+        @project.destroy
+        redirect_to projects_path
   end
   
   private
@@ -40,7 +42,7 @@ class ProjectsController < ApplicationController
   end
   
   def project_params
-    params.require(:project).permit(:title, :description, :link, :slug)
+    params.require(:project).permit(:title, :description, :link, :slug, :image)
   end
   
 end
