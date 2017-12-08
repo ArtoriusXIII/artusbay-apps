@@ -20,7 +20,7 @@ gem 'friendly_id', '~> 5.1.0'
 #Gems for image management
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'fog'
+gem 'fog-aws'
 gem 'unf'
 
 
