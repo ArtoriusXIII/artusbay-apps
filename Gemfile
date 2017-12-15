@@ -22,7 +22,8 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog-aws'
 gem 'unf'
-
+#secure secret.yml
+gem "figaro"
 
 group :development, :test do
   gem 'byebug'
